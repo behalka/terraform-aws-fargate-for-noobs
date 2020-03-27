@@ -1,6 +1,6 @@
 # AWS Fargate Terraform module example usage
 
-This is a playground repository that utilizes [AWS Fargate Terraform module ⭐️](https://github.com/strvcom/terraform-aws-fargate). It is meant for people with zero experience and it hopefully should answer the problems which usually make you stop at the "step 0.1" 🙏🙃. The scripts are extremely simplified ("scripts" is actually a huge exaggeration), they are not supposed to do the work for you, they only serve as examples that are supposed to teach you.
+This is a playground repository that utilizes [AWS Fargate Terraform module](https://github.com/strvcom/terraform-aws-fargate). It is meant for people with zero experience and it hopefully should answer the problems which usually make you stop at the "step 0.1" 🙏. The scripts are extremely simplified ("scripts" is actually a huge exaggeration), they are not supposed to do the work for you, they only serve as examples that are supposed to teach you.
 
 ## Prerequisities 👒
 
@@ -10,7 +10,7 @@ This is a playground repository that utilizes [AWS Fargate Terraform module ⭐�
 - Slightly familiar with AWS stack and Docker 🐳
 - SSH key uploaded to AWS (or created via AWS wizard). Name it `ssh_for_db_test_tf` if you don't want to change the main.tf (yes I know that's not very reusable 🐒).
 
-## What it does ⚙️
+## What it does
 
 - Sets up Fargate infrastructure that allows to run a very simple API in cloud (details [here](https://github.com/strvcom/terraform-aws-fargate#technical-architecture))
 - Creates a Postgres database
@@ -22,7 +22,7 @@ This is a playground repository that utilizes [AWS Fargate Terraform module ⭐�
 - Provides some dummy helper scripts to push your Docker image to the ECR.
 - If you (as me) do not understand the AWS internals and all the VPCs, subnets and other things confuse you, check out [this simple analogy](https://stackoverflow.com/a/45235243).
 
-## Run it
+## Run it ⚙️
 
 Steps needed to take in order to have a running API:
 
@@ -66,7 +66,7 @@ If you perhaps made some changes and you want to restart the cluster, run
 - If you wanna keep experimenting, [here](https://github.com/strvcom/terraform-aws-fargate/blob/master/outputs.tf) is the full list of useful output values the module provides.
 - Also please note that changes made to the ECS can take some time to propagate 🙄. If you want to have a better idea about what is going on, for example after you pushed a new Docker image and you can't see the changes, go to AWS Console -> ECS -> select cluster -> select service ("api") -> events. And if the API does not work (typically the DB connection is not set up correctly), you can go to good old Cloudwatch and see what happened :)
 
-## Future steps in this repo
+## Future steps in this repo ⏭
 
 - `master` branch: minimal "repo" that is supposed to show how to get started with the module. The solution is naive on purpose so even noobs like me can easily decode what is happening 👶.
 - other branches will cover:
