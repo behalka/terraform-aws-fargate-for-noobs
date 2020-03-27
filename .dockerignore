@@ -1,0 +1,11 @@
+.dockerignore
+Dockerfile
+npm-debug.log
+yarn-error.log
+.git
+.hg
+.svn
+
+*.env
+!release.env
+node_modules
