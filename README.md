@@ -70,7 +70,7 @@ If you perhaps made some changes and you want to restart the "dynos", run
 
 - `master` branch: minimal "repo" that is supposed to show how to get started with the module. The solution is naive on purpose so even beginners like me can easily decode what is happening 👶.
 - other branches will cover:
-  - [ ] Different environments (terraform `workspaces`)
+  - [x] Different environments (terraform `workspaces`) -> in the `workspaces` branch
   - [ ] Basic deployment setup (Github actions)
   - [ ] Complete setup with more services (S3, SNS, Alarms)
 

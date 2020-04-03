@@ -12,6 +12,7 @@ firestore-debug.log
 firebase-debug.log
 docs/swagger-resolved.yaml
 .terraform
+*.tfstate.d
 *.tfplan
 *.tfstate
 *.tfstate.backup
